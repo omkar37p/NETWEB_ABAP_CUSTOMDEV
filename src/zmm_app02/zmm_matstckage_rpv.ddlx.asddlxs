@@ -1,0 +1,34 @@
+@Metadata.layer: #PARTNER
+
+@UI: {
+  headerInfo: { typeName: 'Stock in Age Bucket - Multiple Material',
+                typeNamePlural: 'Stock in Age Bucket - Multiple Materials',
+                title: { type: #STANDARD, label: 'Inventory Aging Report', value: 'Material' } },
+  presentationVariant: [{ sortOrder: [{ by: 'Material', direction:  #ASC }] }] }
+
+annotate entity ZMM_MATSTCKAGE_RPV with
+{
+  @UI: {  lineItem:       [ { position: 10, label: 'Material' } ],
+        identification: [ { position: 10, label: 'Material' } ],
+        selectionField: [ { position: 10}  ]}
+  Material;
+  @UI: {  lineItem:       [ { position: 20, label: 'Plant' } ],
+   identification: [ { position: 20, label: 'Plant' } ],
+   selectionField: [ { position: 20}  ]}
+  Plant;
+  @UI: {  lineItem:       [ { position: 30, label: 'Storage Location' } ],
+   identification: [ { position: 30, label: 'Storage Location' } ],
+   selectionField: [ { position: 30}  ]}
+  StorageLocation;
+  @UI.hidden: true
+  InventoryStockType;
+  @UI: {  lineItem:       [ { position: 40, label: 'Special Stock Type' } ],
+   identification: [ { position: 40, label: 'Special Stock Type' }  ]}
+  InventorySpecialStockType;
+  @UI.hidden: true
+  MaterialBaseUnit;
+  @UI: {  lineItem:       [ { position: 50, label: 'Unrestricted Stock' } ],
+   identification: [ { position: 50, label: 'Unrestricted Stock' }  ]}
+  ovrallqty;
+
+}

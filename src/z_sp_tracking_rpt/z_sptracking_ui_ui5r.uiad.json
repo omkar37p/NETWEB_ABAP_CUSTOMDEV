@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "SP_TRACKING_RPT_FINAL",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "SP_TRACKING_RPT_FINAL"
+  },
+  "ui5AppDetails": {
+    "appId": "zsptrackingfinal"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3F4A97FCACEF123EBA25F872428DC7E2F085C082_TM",
+    "semanticObject": "SP_TRACKING_RPT_FINAL",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3F4A97FCACEF123EBA25F872428DC7E2F085C082_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "SP_TRACKING_RPT_FINAL"
+      }
+    }
+  ]
+}

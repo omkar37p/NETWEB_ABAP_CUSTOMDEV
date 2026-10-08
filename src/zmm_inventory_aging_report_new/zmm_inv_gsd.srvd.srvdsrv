@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZMM_INV_GSD {
+  expose ZMM_INV_PGV;
+}

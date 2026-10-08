@@ -1,0 +1,4 @@
+@EndUserText.label: 'PurchaseOrderETA Service Definition'
+define service ZMM_PurchaseOrderETA_ServDefi {
+  expose ZMM_PurchaseorderETA_PV;
+}

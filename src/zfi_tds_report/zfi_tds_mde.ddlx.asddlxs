@@ -1,0 +1,89 @@
+@Metadata.layer:#CUSTOMER
+
+@UI: {
+  headerInfo: { typeName: 'TDS Report',
+                typeNamePlural: 'TDS Report',
+                title: { type: #STANDARD, label: 'TDS Report', value: 'AccountingDocument' } },
+  presentationVariant: [{ sortOrder: [{ by: 'AccountingDocument', direction:  #ASC }] }] }
+
+annotate entity ZFI_TDS_PV with     
+{
+
+   @UI: {  lineItem:       [ { position: 10, label: 'AccountingDocument' } ],
+          identification: [ { position: 10, label: 'AccountingDocument' } ],
+          selectionField: [ { position: 10}  ]}
+   AccountingDocument;
+   
+    @UI: {  lineItem:       [ { position: 30, label: 'Branch' } ],
+           identification: [ { position: 30, label: 'Branch' } ]} 
+   Branch;
+   
+   @UI: {  lineItem:       [ { position: 50, label: 'DocumentDate' } ],
+           identification: [ { position: 50, label: 'DocumentDate' } ]} 
+   DocumentDate;
+   
+   @UI: {  lineItem:       [ { position: 70, label: 'PostingDate' } ],
+           identification: [ { position: 70, label: 'PostingDate' } ]} 
+   PostingDate;
+   
+   @UI: {  lineItem:       [ { position: 90, label: 'SupplierFullName' } ],
+           identification: [ { position: 90, label: 'SupplierFullName' } ]} 
+   SupplierFullName;
+   
+   @UI: {  lineItem:       [ { position: 100, label: 'Supplier' } ],
+           identification: [ { position: 100, label: 'Supplier' } ]} 
+   Supplier;
+   
+   @UI: {  lineItem:       [ { position: 100, label: 'AccountingDocumentType' } ],
+           identification: [ { position: 100, label: 'AccountingDocumentType' } ]} 
+   AccountingDocumentType;
+   
+   @UI: {  lineItem:       [ { position: 130, label: 'DocumentReferenceID' } ],
+           identification: [ { position: 130, label: 'DocumentReferenceID' } ]} 
+   DocumentReferenceID;
+   
+   @UI: {  lineItem:       [ { position: 150, label: 'TaxNumber3' } ],
+           identification: [ { position: 150, label: 'TaxNumber3' } ]} 
+   TaxNumber3;
+   
+//   @UI: {  lineItem:       [ { position: 150, label: 'taxcode' } ],
+//           identification: [ { position: 150, label: 'taxcode' } ]} 
+//   taxcode;
+//   
+//   @UI: {  lineItem:       [ { position: 150, label: 'Tax description' } ],
+//           identification: [ { position: 150, label: 'Tax description' } ]} 
+//   
+//   description;
+   
+   @UI: {  lineItem:       [ { position: 170, label: 'BusinessPartnerPanNumber' } ],
+           identification: [ { position: 170, label: 'BusinessPartnerPanNumber' } ]} 
+   BusinessPartnerPanNumber;
+   
+   @UI: {  lineItem:       [ { position: 190, label: 'GLAccountLongName' } ],
+           identification: [ { position: 190, label: 'GLAccountLongName' } ]} 
+   GLAccountLongName;
+   @UI: {  lineItem:       [ { position: 200, label: 'Whldg Tax Base Amt In Transac Crcy' } ],
+           identification: [ { position: 200, label: 'Whldg Tax Base Amt In Transac Crcy' } ]}
+   WhldgTaxBaseAmtInTransacCrcy;
+   
+      @UI: {  lineItem:       [ { position: 210, label: 'Withholding Tax Type' } ],
+           identification: [ { position: 210, label: 'Withholding Tax Type' } ]}
+    WithholdingTaxType;
+    
+       @UI: {  lineItem:       [ { position: 220, label: 'description' } ],
+           identification: [ { position: 220, label: 'description' } ]} 
+           description;      
+   @UI: {  lineItem:       [ { position: 230, label: 'Is Reversal' } ],
+           identification: [ { position: 230, label: 'Is Reversal' } ]}
+   IsReversal;
+   @UI: {  lineItem:       [ { position: 240, label: 'Is Reversed' } ],
+           identification: [ { position: 240, label: 'Is Reversed' } ]}
+   IsReversed;
+   @UI: {  lineItem:       [ { position: 250, label: 'Withholding Tax Percent' } ],
+           identification: [ { position: 250, label: 'Withholding Tax Percent' } ]}                        
+   WithholdingTaxPercent;
+   @UI: {  lineItem:       [ { position: 260, label: 'AmountInTransactionCurrency' } ],
+           identification: [ { position: 260, label: 'AmountInTransactionCurrency' } ]} 
+   AmountInTransactionCurrency;
+    
+}

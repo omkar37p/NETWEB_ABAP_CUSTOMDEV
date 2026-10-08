@@ -1,0 +1,4 @@
+@EndUserText.label: 'Stock Ageing - Multiple Material'
+define service ZMM_APP01_SD {
+  expose ZMM_APP01_PP as StockageingReport;
+}

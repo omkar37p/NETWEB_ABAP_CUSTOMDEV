@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZFI_TDS_SD {
+  expose ZFI_TDS_PV as TDSReport;
+}

@@ -1,0 +1,112 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo: {
+    typeName: 'QC REPORT',
+    typeNamePlural:'QC Report'
+  }  
+ annotate entity ZPP_QC_PROJECTIONVIEW 
+    with
+{
+    
+   @UI: {
+      lineItem: [ { position: 10, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Final Production Order' 
+    FinalProductionorder;
+    
+    @UI: {
+      lineItem: [ { position: 20, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Level'
+    level_1;
+    
+    @UI: {
+      lineItem: [ { position: 30, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Production Order'
+    Productionorder;
+    
+    @UI: {
+      lineItem: [ { position: 31, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Production Order'
+    GoodsMovementType;
+    
+    @UI: {
+      lineItem: [ { position: 40, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Production Qty'
+    ProductionQty;
+    
+    @UI: {
+      lineItem: [ { position: 50, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'SD Document'  
+    SDSalesOrder;
+    
+    @UI: {
+      lineItem: [ { position: 60, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Sales Order'  
+    SalesOrder;
+    
+    @UI: {
+      lineItem: [ { position: 70, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer PO Ref'  
+    CustomPOReference;
+    
+    @UI: {
+      lineItem: [ { position: 80, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Sales Qty'
+    SOQty;
+    
+    @UI: {
+      lineItem: [ { position: 90, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Material'
+    Material;
+    
+    @UI: {
+      lineItem: [ { position: 100, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Material Desc'
+    MaterialDesc;
+    
+    @UI: {
+      lineItem: [ { position: 110, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Component Qty'
+    ComponentQty;
+    
+    @UI: {
+      lineItem: [ { position: 120, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Serial Number'
+    SerialNumber;
+    
+    @UI: {
+      lineItem: [ { position: 130, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Equipment'
+    Equipment;
+    
+    @UI: {
+      lineItem: [ { position: 140, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Storage Location'
+    StorageLocation;
+    
+    @UI: {
+      lineItem: [ { position: 150, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer Code'
+    CustomerNumber;
+    
+    @UI: {
+      lineItem: [ { position: 160, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer Name'
+    CustomerName;
+      
+}

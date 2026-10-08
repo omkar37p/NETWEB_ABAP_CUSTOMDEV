@@ -1,0 +1,4 @@
+@EndUserText.label: 'Margin Report Service Definition'
+define service ZSALESORDER_REPORT_SD {
+  expose ZSALESORDER_REPORT_PV as SalesOrderReport;
+}

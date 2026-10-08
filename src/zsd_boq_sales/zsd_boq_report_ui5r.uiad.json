@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Sales Report BOQ",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Sales Report BOQ"
+  },
+  "ui5AppDetails": {
+    "appId": "project1"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BAF85FA100D2B6B05FF6549129601957949C99B8_TM",
+    "semanticObject": "salesboq",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BAF85FA100D2B6B05FF6549129601957949C99B8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Report BOQ"
+      }
+    }
+  ]
+}

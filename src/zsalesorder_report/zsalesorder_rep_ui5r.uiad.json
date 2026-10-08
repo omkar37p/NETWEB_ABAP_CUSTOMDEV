@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "SalesOrder Workflow Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "SalesOrder Workflow Report"
+  },
+  "ui5AppDetails": {
+    "appId": "salesorderworkflowreport.salesorderworkflowreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DEE0B21A97ECA8EB01BFB80E6CBEC9183CCE59BA_TM",
+    "semanticObject": "salesorderworkflow_report",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DEE0B21A97ECA8EB01BFB80E6CBEC9183CCE59BA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "SalesOrder Workflow Report",
+        "subtitle": "SalesOrder Workflow Report"
+      }
+    }
+  ]
+}

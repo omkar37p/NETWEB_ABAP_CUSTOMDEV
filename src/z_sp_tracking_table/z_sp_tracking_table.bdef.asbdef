@@ -1,0 +1,26 @@
+managed implementation in class zbp_sp_tracking_table unique;
+strict ( 1 );
+with draft;
+
+define behavior for Z_SP_TRACKING_TABLE //alias <alias_name>
+with unmanaged save
+//persistent table zsp_tb
+draft table zsp_tb2
+lock master total etag createdby
+authorization master ( instance )
+etag master createdby
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Material, Serialnumber;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  determination update on modify { field pws_bdld, cse_bdld, mbd_bdld, heatsink_bdld, ipmi, macaddress,remarks; }
+  mapping for zsp_tb corresponding;
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Inventory Service Definition'
+define service ZMM_INV_SD {
+  expose ZMM_INV_PV  as Material;
+  expose ZMM_INV_RGP;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Stock Ageing Report'
+define service ZMM_APP04_SD_NEW {
+  expose ZMM_APP04_D as StockAgeingReport;
+}

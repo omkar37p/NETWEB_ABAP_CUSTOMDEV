@@ -1,0 +1,4 @@
+@EndUserText.label: 'service defination'
+define service Z_SP_TRACKING_SD {
+  expose Z_SP_TRACKING_RPT_PRV as MAIN;
+}

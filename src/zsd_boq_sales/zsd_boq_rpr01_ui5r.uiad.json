@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "BOQ Sales Order - Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "BOQ Sales Order - Report"
+  },
+  "ui5AppDetails": {
+    "appId": "zsdboqrp01"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_EBC23379A6689AC6F47E517A1AFC076530027333_TM",
+    "semanticObject": "YY1_SALES_BOQ_R",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_EBC23379A6689AC6F47E517A1AFC076530027333_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "BOQ Sales Order - Report"
+      }
+    }
+  ]
+}

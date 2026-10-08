@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "BDLD SUMMARY",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "BDLD SUMMARY"
+  },
+  "ui5AppDetails": {
+    "appId": "sptable"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_569326E9B91859A066D43A4875E25A5F88C5D8AD_TM",
+    "semanticObject": "ZSP_TRACKING_TABLE",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_569326E9B91859A066D43A4875E25A5F88C5D8AD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "BDLD SUMMARY"
+      }
+    }
+  ]
+}

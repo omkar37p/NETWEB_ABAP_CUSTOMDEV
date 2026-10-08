@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination For BOQ Sales Report'
+define service ZBOQ_SD {
+  expose ZBOQ_PV1 as BOQSALESREPORT;
+}

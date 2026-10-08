@@ -1,0 +1,4 @@
+@EndUserText.label: 'TAX CODE SD'
+define service ZFI_TDS_TC_SD {
+  expose ZFI_TDS_TC_PV;
+}

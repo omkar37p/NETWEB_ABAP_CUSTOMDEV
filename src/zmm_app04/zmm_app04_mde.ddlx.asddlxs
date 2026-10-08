@@ -1,0 +1,101 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Stock in Age Bucket - Multiple Material',
+    typeNamePlural: 'Stock in Age Bucket - Multiple Materials'
+  }
+}
+annotate entity ZMM_APP04_D with
+
+
+{
+//  @UI.facet  : [ { id :  'List',
+//                  purpose        :  #STANDARD,
+//                  type           :  #IDENTIFICATION_REFERENCE,
+//                  label          :  'Stocks',
+//                  position       : 10 }   ]
+  @UI.lineItem     : [{ position: 10, label: 'Product'  }]
+  @UI.selectionField      : [{position: 10}]
+  @UI.identification      : [{position: 10, label: 'Product' }]
+  Product;
+  @UI.lineItem     : [{ position: 20, label: 'Plant'  }]
+  @UI.identification      : [{position: 20, label: 'Plant' }]
+  @UI.selectionField      : [{position: 20}]
+  Plant;
+  @UI.lineItem     : [{ position: 30, label: 'StorageLocation'  }]
+  @UI.identification      : [{position: 30, label: 'StorageLocation' }]
+  @UI.selectionField      : [{position: 30}]
+  StorageLocation;
+  @UI.lineItem     : [{ position: 40, label: 'InventorySpecialStockType'  }]
+  @UI.identification      : [{position: 40, label: 'InventorySpecialStockType' }]
+  @UI.selectionField      : [{position: 40}]
+  InventorySpecialStockType;
+  @UI.hidden : true
+  MaterialBaseUnit;
+  @UI.lineItem     : [{ position: 50, label: 'SDDocument'  }]
+  @UI.identification      : [{position: 50, label: 'SDDocument' }]
+  @UI.selectionField      : [{position: 50}]
+  SDDocument;
+  @UI.lineItem     : [{ position: 60, label: 'SDDocumentItem'  }]
+  @UI.identification      : [{position: 60, label: 'SDDocumentItem' }]
+  @UI.selectionField      : [{position: 60}]
+  SDDocumentItem;
+  @UI.lineItem     : [{ position: 70, label: 'Total Stock'  }]
+  @UI.identification      : [{position: 70, label: 'Total Stock' }]
+  Quantity;
+  //      NSDM_Display_Currency;
+  @UI.lineItem     : [{ position: 80, label: 'Total Stock Value'  }]
+  @UI.identification      : [{position: 80, label: 'Total Stock Value' }]
+  StockValueInDisplayCurrency;
+  @UI.hidden : true
+  MatlDocLatestPostgDate;
+  @UI.lineItem     : [{ position: 90, label: '0-30(Qty)'  }]
+  @UI.identification      : [{position: 90, label: '0-30(Qty)' }]
+  Quantity_30;
+  @UI.lineItem     : [{ position: 95, label: '0-30(in Rs)'  }]
+  @UI.identification      : [{position: 95, label: '0-30(in Rs)' }]
+  Value_30;
+  @UI.lineItem     : [{ position: 100, label: '30-60(Qty)'  }]
+  @UI.identification      : [{position: 100, label: '30-60(Qty)' }]
+  Quantity_60;
+  @UI.lineItem     : [{ position: 105, label: '30-60(in Rs)'  }]
+  @UI.identification      : [{position: 105, label: '30-60(in Rs)' }]
+  Value_60;
+  @UI.lineItem     : [{ position: 110, label: '60-90(Qty)'  }]
+  @UI.identification      : [{position: 110, label: '60-90(Qty)' }]
+  Quantity_90;
+  @UI.lineItem     : [{ position: 115, label: '60-90(in Rs)'  }]
+  @UI.identification      : [{position: 115, label: '60-90(in Rs)' }]
+  Value_90;
+  @UI.lineItem     : [{ position: 120, label: '90-120(Qty)'  }]
+  @UI.identification      : [{position: 120, label: '90-120(Qty)' }]
+  Quantity_120;
+  @UI.lineItem     : [{ position: 125, label: '90-120(in Rs)'  }]
+  @UI.identification      : [{position: 125, label: '90-120(in Rs)' }]
+  Value_120;
+  @UI.lineItem     : [{ position: 130, label: '120-150(Qty)'  }]
+  @UI.identification      : [{position: 130, label: '120-150(Qty)' }]
+  Quantity_150;
+  @UI.lineItem     : [{ position: 135, label: '120-150(in Rs)'  }]
+  @UI.identification      : [{position: 135, label: '120-150(in Rs)' }]
+  Value_150;
+  @UI.lineItem     : [{ position: 140, label: '150-180(Qty)'  }]
+  @UI.identification      : [{position: 140, label: '150-180(Qty)' }]
+  Quantity_180;
+  @UI.lineItem     : [{ position: 145, label: '150-180(in Rs)'  }]
+  @UI.identification      : [{position: 145, label: '150-180(in Rs)' }]
+  Value_180;
+  @UI.lineItem     : [{ position: 150, label: '180-365(Qty)'  }]
+  @UI.identification      : [{position: 150, label: '180-365(Qty)' }]
+  Quantity_365;
+  @UI.lineItem     : [{ position: 155, label: '180-365(in Rs)'  }]
+  @UI.identification      : [{position: 155, label: '180-365(in Rs)' }]
+  Value_365;
+  @UI.lineItem     : [{ position: 160, label: 'Beyond 1 year(Qty)'  }]
+  @UI.identification      : [{position: 160, label: 'Beyond 1 year(Qty)' }]
+  Quantity_bucket;
+  @UI.lineItem     : [{ position: 165, label: 'Beyond 1 year(in Rs)'  }]
+  @UI.identification      : [{position: 165, label: 'Beyond 1 year(in Rs)' }]
+  Value_bucket;
+
+}

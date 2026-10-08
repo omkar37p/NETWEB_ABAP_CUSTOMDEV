@@ -1,0 +1,12 @@
+CLASS zbp_mm_purchaseordereta_re DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zmm_purchaseordereta_re.
+
+    PUBLIC SECTION.
+            CLASS-DATA: gt_update TYPE TABLE of ZETA_TABLE,
+                       gt_create TYPE TABLE of ZETA_TABLE.
+
+ENDCLASS.
+
+
+
+CLASS ZBP_MM_PURCHASEORDERETA_RE IMPLEMENTATION.
+ENDCLASS.

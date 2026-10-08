@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "QC_QUALITY CHECK REPORT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "QC_QUALITY CHECK REPORT"
+  },
+  "ui5AppDetails": {
+    "appId": "qcreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D944633E62A2C8BE5222058AE96A66685EF4FB10_TM",
+    "semanticObject": "ZPP_QC_REPORT_PV",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D944633E62A2C8BE5222058AE96A66685EF4FB10_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "QC_QUALITY CHECK REPORT"
+      }
+    }
+  ]
+}

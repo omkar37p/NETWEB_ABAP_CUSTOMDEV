@@ -1,0 +1,4 @@
+@EndUserText.label: 'Inventory Ageing Bucket Report'
+define service ZMM_MATSTCKAGE_UI {
+  expose ZMM_MATSTCKAGE_RPV as Mainpage;
+}

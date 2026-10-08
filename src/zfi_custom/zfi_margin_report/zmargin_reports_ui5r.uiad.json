@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Margin Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Margin Report"
+  },
+  "ui5AppDetails": {
+    "appId": "marginreport.zmarginreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_64CCECAB7ED7753CB42F97C0061F2AA47A8BF870_TM",
+    "semanticObject": "zmargin_report",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_64CCECAB7ED7753CB42F97C0061F2AA47A8BF870_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Margin Report"
+      }
+    }
+  ]
+}

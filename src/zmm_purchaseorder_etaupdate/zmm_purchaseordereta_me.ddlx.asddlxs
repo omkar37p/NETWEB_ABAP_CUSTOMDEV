@@ -1,0 +1,129 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: { typeName: 'Purchase Order ETA Update',
+                typeNamePlural: 'Purchase Order ETA Update',
+                title: { type: #STANDARD, label: 'Purchase Order ETA Update', value: 'PONo' } },
+  presentationVariant: [{ sortOrder: [{ by: 'PONo', direction:  #DESC }] }] }
+annotate view ZMM_PurchaseorderETA_PV with
+{
+  @UI.facet: [ { id:              'PurchaseOrderETAUpdate',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Purchase OrderETA',
+                 position:        10 }]
+                   
+  @UI: {  lineItem:       [ { position: 10, label: 'PO No' } ],
+          identification: [ { position: 10, label: 'PO No' } ],
+          selectionField: [ { position: 10}  ]}
+  PONo;
+  
+  @UI: {  lineItem:       [ { position: 20, label: 'PO Line Item' } ],
+          identification: [ { position: 20, label: 'PO Line Item' } ] }
+  POLineItem;
+  
+  @UI: {  lineItem:       [ { position: 21, label: 'Base Unit of Meausre' } ],
+          identification: [ { position: 21, label: 'Base Unit Of Meausre' } ] }
+  Baseunit;
+  
+  @UI: {  lineItem:       [ { position: 22, label: 'Material' } ],
+          identification: [ { position: 22, label: 'Material' } ] }
+  Material;
+  
+  @UI: {  lineItem:       [ { position: 24, label: 'Supplier' } ],
+          identification: [ { position: 24, label: 'Supplier' } ] }
+  Supplier;
+  
+  @UI: {  lineItem:       [ { position: 26, label: 'Order Quantity' } ],
+          identification: [ { position: 26, label: 'Order Quantity' } ] }
+  OrderQTY;
+  
+  @UI: {  lineItem:       [ { position: 28, label: ' Quantity to be Delivered' } ],
+          identification: [ { position: 28, label: 'Quantity to be Delivered' } ] }
+  QtytobeDelivered;
+  
+  @UI: {  lineItem:       [ { position: 40, label: 'SO No' } ],
+          identification: [ { position: 40, label: 'SO No' } ] }
+  SONo1;
+  
+  @UI: {  lineItem:       [ { position: 50, label: 'Customer Code' } ],
+          identification: [ { position: 50, label: 'Customer Code' } ] }
+  Customercode;
+  
+  @UI: {  lineItem:       [ { position: 60, label: 'Customer Name' } ],
+          identification: [ { position: 60, label: 'Customer Name' } ] }
+  Customername;
+  
+//  @UI: {  lineItem:       [ { position: 60, label: 'Custom field1' } ],
+//          identification: [ { position: 60, label: 'Custom field1' } ] }
+//  CustomField1;
+  @UI: {  lineItem:       [ { position: 62, label: 'Branch Name' } ],
+          identification: [ { position: 62, label: 'Branch Name' } ] }
+ Branchname;
+ 
+ @UI: {  lineItem:       [ { position: 64, label: 'SO Date' } ],
+          identification: [ { position: 64, label: 'SO Date' } ] }
+  SOdate;
+  
+  @UI: {  lineItem:       [ { position: 66, label: 'EDD' } ],
+          identification: [ { position: 66, label: 'EDD' } ] }
+  Edd;
+  
+  
+  @UI: {  lineItem:       [ { position: 70, label: 'ETA Date' } ],
+          identification: [ { position: 70, label: 'ETA Date' } ] }
+  ETADate;
+  
+  @UI: {  lineItem:       [ { position: 80, label: 'Remarks' } ],
+          identification: [ { position: 80, label: 'Remarks' } ] }
+  Remarks;
+  
+  @UI: {  lineItem:       [ { position: 90, label: 'Product Description' } ],
+          identification: [ { position: 90, label: 'Product Description' } ] }
+  ProductDesc;
+  
+  @UI: {  lineItem:       [ { position: 100, label: 'Tax Code' } ],
+          identification: [ { position: 100, label: 'Tax Code' } ] }
+  TaxCode;
+  
+  @UI: {  lineItem:       [ { position: 110, label: 'PO Document Type' } ],
+          identification: [ { position: 110, label: 'PO Document Type' } ] }
+  PODoctype;
+  
+  @UI: {  lineItem:       [ { position: 120, label: 'PO Document Date' } ],
+          identification: [ { position: 120, label: 'PO Document Date' } ] }
+  PODocdate;
+  
+   
+  @UI.hidden: true
+  PO;
+  
+  @UI.hidden: true
+  ETADate1;
+  
+  @UI.hidden: true
+  BranchName1;
+  
+  @UI.hidden: true
+  SOdate1;
+  
+  @UI.hidden: true
+  EDD1;
+  
+  @UI.hidden: true
+  Remark1;
+   @UI.hidden: true
+   CustomerCode1;
+   @UI.hidden: true
+   CustomerName1;
+   @UI.hidden: true
+   SONo;
+  
+  @UI.hidden: true
+  CreatedBy;
+  
+////  @UI: {  lineItem:       [ { position: 80, label: 'Remark' } ],
+////          identification: [ { position: 80, label: 'Remark' } ] }
+////  Remarks1;
+  
+  
+  }

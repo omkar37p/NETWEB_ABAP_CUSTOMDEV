@@ -1,0 +1,4 @@
+@EndUserText.label: 'Margin Report Service Definition'
+define service ZFI_MARGIN_REPORT_UI {
+  expose ZFI_MARGIN_REPORT_PV as MarginReport;
+}

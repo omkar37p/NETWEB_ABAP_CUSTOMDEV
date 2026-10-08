@@ -1,0 +1,44 @@
+managed implementation in class zbp_mm_purchaseordereta_re unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZMM_PurchaseorderETA_RE //alias <alias_name>
+draft table zmm_poetatab
+with unmanaged save
+//persistent table ZETA_TABLE
+lock master total etag CreatedBy
+authorization master ( instance )
+etag master CreatedBy
+{
+  create;
+  update;
+  delete;
+  field(readonly:update ) POLineItem,SONo,Material,Baseunit,OrderQTY, QtytobeDelivered,Supplier,PONo ;
+ // field (mandatory) ETADate,Remarks,CustomerCode, CustomerName,SONo1 ;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  determination getdata on save { create; update; field ETADate;}
+  determination update on modify { field ETADate, Remarks,Customercode,Customername,SONo1;}
+  mapping for ZETA_TABLE corresponding;
+//  {
+//
+//    PONo = pono;
+//    POLineItem = polineitem;
+//    SONo = sono;
+//    CustomerCode = customercode;
+//    CustomerName = customername;
+//    ETADate = etadate;
+//    Remarks = remarks;
+//    CreatedBy = createdby;
+//    po = po;
+//
+//  }
+
+
+
+}

@@ -1,0 +1,28 @@
+@Metadata.layer: #PARTNER
+annotate entity ZFI_TDS_TC_PV
+    with 
+{
+   
+//    @UI.facet: [{ id: 'ID01', 
+//                    purpose: #STANDARD,
+//                    type: #IDENTIFICATION_REFERENCE, 
+//                    label: 'Tax Code', 
+//                    position: 10 } ]
+//  @UI.lineItem: [{ position: 10, label: 'TaxCode' }]
+//  @UI.identification:  [{ position: 10, label: 'TaxCode' }]
+//  @EndUserText.label: 'TaxCode'
+@UI.facet: [{ id: 'ID01',
+               purpose: #STANDARD,
+               type: #COLLECTION, 
+               label: 'Tax Code', position: 10 },
+      { id: 'Idc01', type: #IDENTIFICATION_REFERENCE, parentId: 'ID01' } ]
+  @UI.lineItem: [{ position: 10, label: 'TaxCode' }]
+  @UI.identification:  [{ position: 10, label: 'TaxCode' }]
+  @EndUserText.label: 'TaxCode'
+Taxcode;
+@UI.lineItem: [{ position: 50, label: 'Description' }]
+  @UI.identification:  [{ position: 50, label: 'Description' }]
+  @EndUserText.label: 'Description'
+Description;
+    
+}

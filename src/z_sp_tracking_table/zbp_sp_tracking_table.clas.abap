@@ -1,0 +1,11 @@
+CLASS zbp_sp_tracking_table DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF z_sp_tracking_table.
+    PUBLIC SECTION.
+            CLASS-DATA: gt_update TYPE TABLE of ZSP_TB,
+                       gt_create TYPE TABLE of ZSP_TB.
+
+ENDCLASS.
+
+
+
+CLASS ZBP_SP_TRACKING_TABLE IMPLEMENTATION.
+ENDCLASS.

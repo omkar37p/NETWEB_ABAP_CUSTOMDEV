@@ -1,0 +1,170 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo: {
+    typeName: 'Quality Check Report',
+    typeNamePlural:'Quality Check Report' 
+}
+
+annotate entity ZPP_QC_RPT_PROJECTION_VIEW 
+    with 
+{
+     @UI: {
+      lineItem: [ { position: 10, importance: #HIGH} ]
+    }
+//    @UI.selectionField: [{position:20   }]
+    @EndUserText.label: ' Production Order' 
+    ProductionOrder;
+    
+    @UI: {
+      lineItem: [ { position: 20, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Level'
+    level_1;
+       @UI: {
+      lineItem: [ { position: 30, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Goods MovementType'
+    GoodsMovementType;
+    
+    @UI: {
+      lineItem: [ { position: 40, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Production Qty'
+    ProductionQty;
+    
+    
+    @UI: {
+      lineItem: [ { position: 50, importance: #HIGH} ]
+    }
+    @UI.selectionField: [{position:10   }]
+    @EndUserText.label: 'Sales Order'  
+    SalesOrder;
+    @UI: {
+      lineItem: [ { position: 70, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer PO Ref'  
+    CustomPOReference;
+    
+    @UI: {
+      lineItem: [ { position: 80, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Sales Qty'
+    SOQty;
+    
+    @UI: {
+      lineItem: [ { position: 90, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Material'
+    Material;
+     @UI: {
+      lineItem: [ { position: 91, importance: #HIGH} ]
+    }
+    @EndUserText.label: ' MaterialDocument'
+     MaterialDocument;
+    
+    @UI: {
+      lineItem: [ { position: 100, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Material Desc'
+    MaterialDesc;
+    
+    @UI: {
+      lineItem: [ { position: 110, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Component Qty'
+    ComponentQty;
+    
+    @UI: {
+      lineItem: [ { position: 120, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Serial Number'
+    SerialNumber;
+    
+    @UI: {
+      lineItem: [ { position: 130, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Equipment'
+    Equipment;
+    
+    @UI: {
+      lineItem: [ { position: 140, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Storage Location'
+    StorageLocation;
+    
+    @UI: {
+      lineItem: [ { position: 150, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer Code'
+    CustomerNumber;
+    
+    @UI: {
+      lineItem: [ { position: 160, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Customer Name'
+    CustomerName;
+      @UI: {
+      lineItem: [ { position: 170, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Standard Warranty'
+    StandardWarranty;
+    
+    @UI: {
+      lineItem: [ { position: 180, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'InspectionLot'
+    InspectionLot;
+    
+    @UI: {
+      lineItem: [ { position: 190, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'MIC'
+    MIC;
+    
+    @UI: {
+      lineItem: [ { position: 200, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'InspectionSpecificationText '
+    InspectionSpecificationText ;
+    
+    @UI: {
+      lineItem: [ { position: 210, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'MIC_RESULT'
+    MIC_RESULT;
+    
+    @UI: {
+      lineItem: [ { position: 220, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'Inspection_Desc'
+    Inspection_Desc;
+    
+    @UI: {
+      lineItem: [ { position: 230, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'IPMIUSERPASSWORD'
+    IPMIUSERPASSWORD;
+    
+    @UI: {
+      lineItem: [ { position: 240, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'KEYS'
+    KEYS;
+     
+    @UI: {
+      lineItem: [ { position: 250, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'VERSION'
+    VERSION;
+     
+    @UI: {
+      lineItem: [ { position: 260, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'OS'
+    OS;
+    @UI: {
+      lineItem: [ { position: 260, importance: #HIGH} ]
+    }
+    @EndUserText.label: 'remarks'
+    remarks;
+    
+}

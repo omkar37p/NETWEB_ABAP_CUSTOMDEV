@@ -1,0 +1,4 @@
+@EndUserText.label: 'Stock Ageing - Multiple Materials'
+define service ZMM_APP04_SDF {
+  expose ZMM_APP04_CE as Mainpage;
+}

@@ -1,0 +1,101 @@
+@Metadata.layer: #PARTNER
+@UI: {
+  headerInfo: { typeName: 'BOQ Sales Report',
+                typeNamePlural: 'BOQ Sales Report',
+                title: { type: #STANDARD, label: 'BOQ Sales Report', value: 'SalesOrderNumber' } },
+  presentationVariant: [{ sortOrder: [{ by: 'SalesOrderNumber', direction:  #ASC }] }] }
+
+
+
+//@Metadata.layer: #PARTNER
+//@UI.headerInfo: { typeName: 'BOQ Sales Report', typeNamePlural:'BOQ Sales Report' }
+annotate entity ZSD_BOQ_REPORT with                                                                                         //Metadata of BOQ Sales Report
+{
+@UI: { lineItem: [ { position: 10, importance: #HIGH } ] }
+@EndUserText.label: 'Sales Order Number'
+SalesOrderNumber;
+@UI: { lineItem: [ { position: 20, importance: #HIGH } ] }
+@EndUserText.label: 'Sales Order Item'
+SalesOrderItem;
+/*@UI: { lineItem: [ { position: 25, importance: #HIGH } ] }        //No Need
+@EndUserText.label: 'Schedule Line Number'
+ScheduleLine;*/
+@UI: { lineItem: [ { position: 30, importance: #HIGH } ] }
+@EndUserText.label: 'Item Lavel 1'
+ItemLevel01;
+@UI: { lineItem: [ { position: 40, importance: #HIGH } ] }
+@EndUserText.label: 'Item Level 2'
+ItemLevel02;
+@UI: { lineItem: [ { position: 50, importance: #HIGH } ] }
+@EndUserText.label: 'Item Level 3'
+ItemLevel03;
+@UI: { lineItem: [ { position: 60, importance: #HIGH } ] }
+@EndUserText.label: 'Sales Order Status'
+SalesOrderStatus;
+@UI: { lineItem: [ { position: 70, importance: #HIGH } ] }
+@EndUserText.label: 'Customer Name'
+CustomerName;
+@UI: { lineItem: [ { position: 80, importance: #HIGH } ] }
+@EndUserText.label: 'Sales Date'
+SalesDate;
+@UI: { lineItem: [ { position: 90, importance: #HIGH } ] }
+@EndUserText.label: 'Delivery Date'
+DeliveryDate;
+/*@UI: { lineItem: [ { position: 95, importance: #HIGH } ] }        //No Need
+@EndUserText.label: 'Schedule Line Category'
+ScheduleCategory;*/
+@UI: { lineItem: [ { position: 100, importance: #HIGH } ] }
+@EndUserText.label: 'FG Number'
+FGNumber;
+@UI: { lineItem: [ { position: 110, importance: #HIGH } ] }
+@EndUserText.label: 'FG Name'
+FGName;
+@UI: { lineItem: [ { position: 115, importance: #HIGH } ] }
+@EndUserText.label: 'FG Base Quantity'
+FGBaseQty;
+@UI: { lineItem: [ { position: 120, importance: #HIGH } ] }
+@EndUserText.label: 'FG Quantity'
+FGQty;
+/*@UI: { lineItem: [ { position: 125, importance: #HIGH } ] }       //No Need
+@EndUserText.label: 'Open Quantity'
+ScheduleQuantity;*/
+@UI: { lineItem: [ { position: 125, importance: #HIGH } ] }
+@EndUserText.label: 'SFG Variant'
+SFGVariant;
+@UI: { lineItem: [ { position: 130, importance: #HIGH } ] }
+@EndUserText.label: 'SFG Number'
+SFGNumber;
+@UI: { lineItem: [ { position: 140, importance: #HIGH } ] }
+@EndUserText.label: 'SFG Name'
+SFGName;
+@UI: { lineItem: [ { position: 145, importance: #HIGH } ] }
+@EndUserText.label: 'SFG Base Quantity'
+SFGBaseQty;
+@UI: { lineItem: [ { position: 150, importance: #HIGH } ] }
+@EndUserText.label: 'SFG Quantity'
+SFGQty;
+@UI: { lineItem: [ { position: 155, importance: #HIGH } ] }
+@EndUserText.label: 'KIT BOQ Variant'
+KITBOQVariant;
+@UI: { lineItem: [ { position: 160, importance: #HIGH } ] }
+@EndUserText.label: 'KIT BOQ'
+KITBOQ;
+@UI: { lineItem: [ { position: 170, importance: #HIGH } ] }
+@EndUserText.label: 'KIT BOQ Name'
+KITBOQName;
+@UI: { lineItem: [ { position: 180, importance: #HIGH } ] }
+@EndUserText.label: 'KIT BOQ Quantity'
+KITBOQQty;
+@UI: { lineItem: [ { position: 190, importance: #HIGH } ] }
+@EndUserText.label: 'SalesPerson' //Name change as per the requirement
+SalesHead;
+@UI: { lineItem: [ { position: 200, importance: #HIGH } ] }
+@EndUserText.label: 'SalesHead'  ///Name change as per the requirement
+SalesPerson;
+@UI: { lineItem: [ { position: 210, importance: #HIGH } ] }
+@EndUserText.label: 'Branch Name'
+BranchName;
+@UI: { lineItem: [ { position: 220, importance: #HIGH } ] }
+@EndUserText.label: 'Bill Status'
+BillStatus;
+}

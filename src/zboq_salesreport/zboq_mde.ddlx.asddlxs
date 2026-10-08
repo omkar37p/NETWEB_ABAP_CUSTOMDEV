@@ -1,0 +1,103 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: { typeName: 'BOQ Sales Report',
+                typeNamePlural: 'BOQ Sales Report',
+                title: { type: #STANDARD, label: 'BOQ Sales Report', value: 'SalesOrder' } },
+  presentationVariant: [{ sortOrder: [{ by: 'SalesOrder', direction:  #DESC }] }] }
+annotate view ZBOQ_PV1 with
+{
+  @UI.facet: [ { id:              'BOQSalesReport',
+                    purpose:         #STANDARD,
+                    type:            #IDENTIFICATION_REFERENCE,
+                    label:           'BOQSalesReport',
+                    position:        10 } ]
+//                  { id:              'SalesOrder',
+//                    purpose:         #STANDARD,
+//                    type:            #LINEITEM_REFERENCE,
+//                    label:           'SalesOrder',
+//                    position:        10,
+//                    targetElement:   'SalesOrder'} ]
+@UI: {  lineItem:       [ { position: 10, label: 'SalesOrder' } ],
+        identification:   [ { position: 10, label: 'SalesOrder' } ],
+        selectionField:   [ { position: 10}  ]}
+  SalesOrder;
+@UI: {  lineItem:       [ { position: 20, label: 'Sales Order Item' } ],
+        identification:   [ { position: 20, label: 'Sales Order Item' } ],
+        selectionField:   [ { position: 20}  ]}
+SalesOrderItem;
+
+@UI: {  lineItem:       [ { position: 30, label: 'Schedule Line' } ],
+        identification:   [ { position: 30, label: 'Schedule Line' } ],
+        selectionField:   [ { position: 30}  ]}
+ScheduleLine;
+
+ @UI.lineItem          : [{ position: 40, label: 'SO Status' }]
+  @UI.identification    : [{ position: 40, label: 'SO Status'  }]
+SOStatus;
+
+@UI.lineItem          : [{ position: 41, label: 'Customer Name' }]
+  @UI.identification    : [{ position: 41, label: 'Customer Name'  }]
+CustomerName;
+
+ @UI.lineItem          : [{ position: 50, label: 'SO Date' }]
+  @UI.identification    : [{ position: 50, label: 'SO Date'  }]
+SODate;
+
+ @UI.lineItem          : [{ position: 60, label: 'Delivery Date' }]
+  @UI.identification    : [{ position: 60, label: 'Delivery Date'  }]
+DeliveryDate;
+
+@UI.lineItem          : [{ position: 61, label: 'FGNo' }]
+  @UI.identification    : [{ position: 61, label: 'FGNo'  }]
+FGNo;
+
+ @UI.lineItem          : [{ position: 70, label: 'FG Description' }]
+  @UI.identification    : [{ position: 70, label: 'FG Description'  }]
+FGDescription;
+
+ @UI.lineItem          : [{ position: 80, label: 'SFG No' }]
+  @UI.identification    : [{ position: 80, label: 'SFG No'  }]
+SFGNo;
+
+@UI.lineItem          : [{ position: 90, label: 'SFG Description' }]
+  @UI.identification    : [{ position: 90, label: 'SFG Description'  }]
+SFGDescription;
+
+@UI.lineItem          : [{ position: 100, label: 'SO Unit' }]
+  @UI.identification    : [{ position: 100, label: 'SO Unit'  }]
+SOUnit;
+
+@UI.lineItem          : [{ position: 110, label: ' Order Quantity' }]
+  @UI.identification    : [{ position: 110, label: ' Order Quantity'  }]
+ OrderQuantity;
+
+@UI.lineItem          : [{ position: 120, label: 'Total Order Quantity' }]
+  @UI.identification    : [{ position: 120, label: 'Total Order Quantity'  }]
+TotalOrderQuantity;
+
+ @UI.lineItem          : [{ position: 130, label: 'KITBOQ' }]
+  @UI.identification    : [{ position: 130, label: 'KITBOQ'  }]
+KITBOQ;
+
+ @UI.lineItem          : [{ position: 140, label: 'KITBOQName' }]
+  @UI.identification    : [{ position: 140, label: 'KITBOQName'  }]
+KITBOQName;
+
+ @UI.lineItem          : [{ position: 150, label: 'BOQQty' }]
+  @UI.identification    : [{ position: 150, label: 'BOQQty'  }]
+BOQQty;
+
+ @UI.lineItem          : [{ position: 160, label: 'SalesHead' }]
+  @UI.identification    : [{ position: 160, label: 'SalesHead'  }]
+SalesHead;
+
+ @UI.lineItem          : [{ position: 170, label: 'Branch Name' }]
+  @UI.identification    : [{ position: 170, label: 'Branch Name'  }]
+BranchName;
+
+ @UI.lineItem          : [{ position: 180, label: 'Bill Status' }]
+  @UI.identification    : [{ position: 180, label: 'Bill Status'  }]
+BillStatus;
+ @UI.lineItem          : [{ position: 190, label: 'testsf' }]
+SFGNo1;
+}

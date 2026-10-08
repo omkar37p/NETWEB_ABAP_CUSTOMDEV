@@ -1,0 +1,89 @@
+@Metadata.layer: #PARTNER
+@UI.headerInfo: {
+    typeName: 'Sales-Production TABLE',
+    typeNamePlural:'Sales-Production TABLE',
+    title: {
+        type: #STANDARD,
+
+        value: 'Material'
+
+        }
+    }
+
+annotate view Z_SP_TRACKING_TABLE_PV with
+{
+  @UI.facet: [{ purpose: #STANDARD,
+                position: 1,
+                type:#IDENTIFICATION_REFERENCE }]
+  @UI: {
+    lineItem: [ { position: 10, importance: #HIGH} ],
+    identification: [{ position: 10 }]
+  }
+  @UI.selectionField: [{ position: 10 }]
+
+  @EndUserText.label: 'Material'
+  Material;
+
+  @UI: {
+    lineItem: [ { position: 20, importance: #HIGH} ],
+    identification: [{ position: 20 }]
+  }
+  @UI.selectionField: [{ position: 20 }]
+  @EndUserText.label: 'Serialnumber'
+  Serialnumber;
+
+  @UI: {
+    lineItem: [ { position: 30, importance: #HIGH} ],
+    identification: [{ position: 30 }]
+  }
+  @EndUserText.label: 'Pws_Bdld'
+  Pws_Bdld;
+
+  @UI: {
+    lineItem: [ { position: 40, importance: #HIGH} ],
+    identification: [{ position: 40 }]
+  }
+  @EndUserText.label: 'Cse_Bdld'
+  Cse_Bdld;
+
+  @UI: {
+    lineItem: [ { position: 50, importance: #HIGH} ],
+    identification: [{ position: 50 }]
+  }
+  @EndUserText.label: 'Mbd_Bdld'
+  Mbd_Bdld;
+  @UI: {
+    lineItem: [ { position: 60, importance: #HIGH} ],
+    identification: [{ position: 60 }]
+  }
+  @EndUserText.label: 'Heatsink_Bdld'
+  Heatsink_Bdld;
+
+  @UI: {
+    lineItem: [ { position: 70, importance: #HIGH} ],
+    identification: [{ position: 70 }]
+  }
+  @EndUserText.label: 'Ipmi'
+  Ipmi;
+
+  @UI: {
+    lineItem: [ { position: 80, importance: #HIGH} ],
+    identification: [{ position: 80 }]
+  }
+  @EndUserText.label: 'Mac Address'
+  Macaddress;
+  
+  @UI: {
+    lineItem: [ { position: 90, importance: #HIGH} ],
+    identification: [{ position: 90 }]
+  }
+  @EndUserText.label: 'Remarks'
+  Remarks;
+  @UI: {
+    lineItem: [ { position: 100, importance: #HIGH} ]
+  }
+  @UI.hidden: true
+  @EndUserText.label: 'Final Production Order'
+  Createdby;
+
+}

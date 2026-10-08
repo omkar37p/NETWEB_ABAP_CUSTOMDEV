@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "PO ETA Update",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "PO ETA Update"
+  },
+  "ui5AppDetails": {
+    "appId": "poetaupdatereport.zmmpurchaseorderetaupdate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C954CD9ACF40416B9213AE26C0AA75B1388024B8_TM",
+    "semanticObject": "ZMM_PURCHASEORDERETA_PV",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C954CD9ACF40416B9213AE26C0AA75B1388024B8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "PO ETA Update",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

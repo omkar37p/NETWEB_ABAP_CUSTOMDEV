@@ -1,0 +1,46 @@
+@Metadata.layer: #PARTNER
+
+@UI: {
+  headerInfo: { typeName: 'SALES ORDER REPORT',
+                typeNamePlural: 'SALES ORDER REPORT',
+                title: { type: #STANDARD, label: 'SALES ORDER REPORT', value: 'SO' } },
+  presentationVariant: [{ sortOrder: [{ by: 'SO', direction:  #DESC }] }] }
+annotate view ZSALESORDER_REPORT_PV with
+{
+
+  @UI: {  lineItem:       [ { position: 10, label: 'Sales Order No.' } ],
+        identification:   [ { position: 10, label: 'Sales Order No.' } ],
+        selectionField:   [ { position: 10}  ]}
+
+  SO ;
+  
+  /*@UI: {  lineItem:       [ { position: 20, label: 'WorkFlow ID' } ],
+        identification:   [ { position: 20, label: 'WorkFlow ID' } ],
+        selectionField:   [ { position: 20}  ]}
+ WorkflowTaskInternalID;*/
+  
+    @UI: {  lineItem:       [ { position: 30, label: 'Created By' } ],
+        identification:   [ { position: 30, label: 'Created By' } ] }
+  Created_By;
+  
+     @UI: {  lineItem:       [ { position: 40, label: 'Created By Name' } ],
+        identification:   [ { position: 40, label: 'Created By Name' } ] }
+  Created_By_Name;
+  
+     @UI: {  lineItem:       [ { position: 50, label: 'Created Date' } ],
+        identification:   [ { position: 50, label: 'Created Date' } ] }
+  Created_Date;
+  
+     @UI: {  lineItem:       [ { position: 60, label: 'Processor' } ],
+        identification:   [ { position: 60, label: 'Processor' } ] }
+ Processor; 
+ 
+ @UI: {  lineItem:       [ { position: 70, label: 'Processor Name' } ],
+        identification:   [ { position: 70, label: 'Processor Name' } ] }
+Processor_Name ;
+
+@UI: {  lineItem:       [ { position: 80, label: 'Status' } ],
+        identification:   [ { position: 80, label: 'Status' } ] }
+ Status;
+   }
+    
